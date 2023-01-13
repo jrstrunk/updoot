@@ -108,8 +108,8 @@ function restoreSettings(state) {
 
     state.theme = savedSettings && savedSettings.theme != null ? savedSettings.theme : state.theme;
     state.showNsfw = savedSettings && savedSettings.showNsfw != null ? savedSettings.showNsfw : state.showNsfw;
-    state.filterNsfw = savedSettings && savedSettings.showNsfw != null ? savedSettings.filterNsfw : state.filterNsfw;
-    state.subreddits = savedSettings && savedSettings.showNsfw != null ? savedSettings.subreddits : state.subreddits;
+    state.filterNsfw = savedSettings && savedSettings.filterNsfw != null ? savedSettings.filterNsfw : state.filterNsfw;
+    state.subreddits = savedSettings && savedSettings.subreddits != null ? savedSettings.subreddits : state.subreddits;
 
     state.layout = savedSettings && savedSettings.layout ? savedSettings.layout : 'fixed';
 }
